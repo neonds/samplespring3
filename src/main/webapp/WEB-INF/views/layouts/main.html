@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+	<meta charset="UTF-8">
+	<title>Main Layout</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<div class="test" th:fragment="header">
+		header
+	</div>
+	
+	<div th:fragment="footer">
+		footer
+	</div>
+	
+	<th:block th:fragment="javascript">
+	<script type="text/javascript">
+		alert("Whoa!");
+	</script>
+	</th:block>
+</body>
+</html>
