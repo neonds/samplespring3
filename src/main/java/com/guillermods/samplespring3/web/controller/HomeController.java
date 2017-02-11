@@ -1,3 +1,7 @@
+/**
+ * Copyright (C) 10 feb. 2017 Guillermo Díaz Solís.
+ * Todos los derechos reservados.
+ */
 package com.guillermods.samplespring3.web.controller;
 
 import java.util.Date;
