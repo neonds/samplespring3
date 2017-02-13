@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
-<head th:replace="layouts/main :: head">
-	<meta charset="UTF-8">
-	<title>Home</title>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<th:block th:replace="layouts/main :: style"></th:block>
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{/resources/css/home/home.css}" href="resources/css/home/home.css">
 </head>
+
 <body>
-	<h1 th:text="#{home.index.brand}">Home</h1>
-	<div th:replace="layouts/main :: header"></div>
-	<p th:text="${serviceMessage}"></p>
+
+	<nav th:replace="layouts/main :: header"></nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-6">Hola mundo</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
 	<div th:replace="layouts/main :: footer"></div>
 	<th:block th:replace="layouts/main :: javascript"></th:block>
 </body>

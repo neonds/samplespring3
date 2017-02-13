@@ -7,7 +7,6 @@ package com.guillermods.samplespring3.repository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,7 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import com.guillermods.samplespring3.RootConfig;
-import com.guillermods.samplespring3.config.PersistenceDevConfig;
 import com.guillermods.samplespring3.domain.User;
 
 /**

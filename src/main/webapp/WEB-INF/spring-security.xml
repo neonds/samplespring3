@@ -12,11 +12,16 @@
 		<intercept-url pattern="/webjars/**" access="permitAll" />
 		<intercept-url pattern="/**" access="authenticated" />
 	</http>
-	<authentication-manager>
-		<authentication-provider>
-			<user-service>
-				<user name="admin" password="Test1234" authorities="ROLE_USER" />
-			</user-service>
+
+	<beans:bean id="encoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+	<beans:bean id="userDetailsService"
+		class="com.guillermods.samplespring3.service.UserDetailsServiceImpl" />
+
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="userDetailsService">
+			<password-encoder ref="encoder" />
 		</authentication-provider>
 	</authentication-manager>
 
