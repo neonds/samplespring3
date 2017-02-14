@@ -16,11 +16,9 @@
 	<beans:bean id="encoder"
 		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
 
-	<beans:bean id="userDetailsService"
-		class="com.guillermods.samplespring3.service.UserDetailsServiceImpl" />
 
 	<authentication-manager alias="authenticationManager">
-		<authentication-provider user-service-ref="userDetailsService">
+		<authentication-provider user-service-ref="userDetailsServiceImpl">
 			<password-encoder ref="encoder" />
 		</authentication-provider>
 	</authentication-manager>

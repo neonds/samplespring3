@@ -19,11 +19,12 @@ import com.guillermods.samplespring3.repository.UserRepository;
 @Service("userDetailsServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-  @Autowired
+  
   private UserRepository userRepository;
 
-  public UserDetailsServiceImpl() {
-
+  @Autowired
+  public UserDetailsServiceImpl(UserRepository userRepository) {
+    this.userRepository = userRepository;
   }
 
   /*
@@ -35,7 +36,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
    */
   @Transactional
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-    System.out.println("Buscando...");
     return (UserDetails) userRepository.findUserByUsername(username);
   }
 
