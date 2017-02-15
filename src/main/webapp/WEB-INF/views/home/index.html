@@ -7,7 +7,8 @@
 <th:block th:replace="layouts/main :: style"></th:block>
 
 <link rel="stylesheet" type="text/css"
-	th:href="@{/resources/css/home/home.css}" href="resources/css/home/home.css">
+	th:href="@{/resources/css/home/home.css}"
+	href="resources/css/home/home.css">
 </head>
 
 <body>
@@ -22,9 +23,11 @@
 			<div class="col-md-2"></div>
 		</div>
 	</div>
-	
+
 	<div th:replace="layouts/main :: footer"></div>
-	
+
 	<th:block th:replace="layouts/main :: javascript"></th:block>
+	<script type="text/javascript" src="/resources/js/common.js"
+		th:src="@{/resources/js/home/home.js}"></script>
 </body>
 </html>
