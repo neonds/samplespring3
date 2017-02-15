@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2016 Guillermo Díaz Solís. Todos los derechos reservados.
  */
-package com.guillermods.samplespring3.domain;
+package com.guillermods.spring3.domain;
 
 import java.util.Date;
 

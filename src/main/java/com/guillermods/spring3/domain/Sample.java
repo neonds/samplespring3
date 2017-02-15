@@ -1,4 +1,4 @@
-package com.guillermods.samplespring3.domain;
+package com.guillermods.spring3.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

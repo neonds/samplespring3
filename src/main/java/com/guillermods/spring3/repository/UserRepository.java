@@ -2,12 +2,12 @@
  * Copyright (C) 10 feb. 2017 Guillermo Díaz Solís.
  * Todos los derechos reservados.
  */
-package com.guillermods.samplespring3.repository;
+package com.guillermods.spring3.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.guillermods.samplespring3.domain.User;
+import com.guillermods.spring3.domain.User;
 
 
 /**

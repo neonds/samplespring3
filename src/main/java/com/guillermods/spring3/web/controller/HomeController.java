@@ -2,7 +2,7 @@
  * Copyright (C) 10 feb. 2017 Guillermo Díaz Solís.
  * Todos los derechos reservados.
  */
-package com.guillermods.samplespring3.web.controller;
+package com.guillermods.spring3.web.controller;
 
 import java.util.Date;
 
@@ -14,8 +14,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.guillermods.samplespring3.service.SampleService;
-import com.guillermods.samplespring3.web.model.SampleDto;
+import com.guillermods.spring3.service.SampleService;
+import com.guillermods.spring3.web.model.SampleDto;
 
 /**
  * @author Guillermo B Díaz Solís

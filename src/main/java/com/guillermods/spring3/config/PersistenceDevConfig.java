@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 10 feb. 2017 Guillermo Díaz Solís. Todos los derechos reservados.
  */
-package com.guillermods.samplespring3.config;
+package com.guillermods.spring3.config;
 
 import java.sql.SQLException;
 import java.util.Properties;
@@ -20,8 +20,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.guillermods.samplespring3.domain.DomainLayer;
-import com.guillermods.samplespring3.repository.RootRepositoryConfig;
+import com.guillermods.spring3.domain.DomainLayer;
+import com.guillermods.spring3.repository.RootRepositoryConfig;
 
 /**
  * @author Guillermo B Díaz Solís

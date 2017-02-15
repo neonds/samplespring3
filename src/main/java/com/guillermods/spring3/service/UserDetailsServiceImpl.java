@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2016 Guillermo Díaz Solís. Todos los derechos reservados.
  */
-package com.guillermods.samplespring3.service;
+package com.guillermods.spring3.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.guillermods.samplespring3.repository.UserRepository;
+import com.guillermods.spring3.repository.UserRepository;
 
 /**
  * @author Guillermo Díaz Solís

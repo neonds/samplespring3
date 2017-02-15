@@ -8,6 +8,6 @@
         http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
-    <bean class="com.guillermods.samplespring3.RootConfig"/>
+    <bean class="com.guillermods.spring3.RootConfig"/>
 
 </beans>

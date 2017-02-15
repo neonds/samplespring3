@@ -2,7 +2,7 @@
  * Copyright (C) 10 feb. 2017 Guillermo Díaz Solís.
  * Todos los derechos reservados.
  */
-package com.guillermods.samplespring3;
+package com.guillermods.spring3;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;

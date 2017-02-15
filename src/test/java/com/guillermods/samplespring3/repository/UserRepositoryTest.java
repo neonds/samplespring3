@@ -13,8 +13,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
-import com.guillermods.samplespring3.RootConfig;
-import com.guillermods.samplespring3.domain.User;
+import com.guillermods.spring3.RootConfig;
+import com.guillermods.spring3.domain.User;
 
 /**
  * @author Guillermo B Díaz Solís
@@ -31,7 +31,7 @@ public class UserRepositoryTest {
   private UserDetailsService userdetailService;
 
   /**
-   * Test method for {@link com.guillermods.samplespring3.repository.UserRepository#findUserByUsername(java.lang.String)}.
+   * Test method for {@link com.guillermods.spring3.repository.UserRepository#findUserByUsername(java.lang.String)}.
    */
   @Test
   public void testFindUserByUsername() {
